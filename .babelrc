@@ -1,0 +1,13 @@
+{
+	"plugins": [],
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+				"modules": false,
+        "targets": ["ie >= 9", "> 1%"]
+      }
+    ],
+    "@babel/preset-react"
+  ]
+}
