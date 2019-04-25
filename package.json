@@ -11,9 +11,8 @@
   },
   "keywords": [],
   "author": "ConsidoNet Solutions Paweł Gabryelewicz",
-  "license": "SEE LICENSE IN LICENSE",
-  "dependencies": {
-  },
+  "license": "MIT",
+  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.4.3",
     "@babel/core": "^7.4.3",
@@ -30,8 +29,5 @@
     "rollup-plugin-typescript2": "^0.20.1",
     "tslint": "^5.11.0",
     "typescript": "^3.4.3"
-  },
-  "peerDependencies": {
-    "react": ">=0.14.0 <17.0.0"
   }
 }
