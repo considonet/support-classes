@@ -76,7 +76,7 @@ var addClass = function (el, bem, className) {
     _addClass(el, (bem ? "-" : "") + className);
 };
 var addClasses = function (namespaceLessBem, features, el) {
-    if (namespaceLessBem === void 0) { namespaceLessBem = true; }
+    if (namespaceLessBem === void 0) { namespaceLessBem = false; }
     if (features === void 0) { features = ["webp", "androidbrowser", "touchdevice"]; }
     if (el === void 0) { el = document.getElementsByTagName("html")[0]; }
     features.forEach(function (feature) {
