@@ -18,7 +18,7 @@ const addClass = (el: HTMLElement, bem: boolean, className: string) => {
   _addClass(el, (bem ? "-" : "") + className);
 };
 
-const addClasses = (namespaceLessBem: boolean = true, features: Feature[] = [ "webp", "androidbrowser", "touchdevice" ], el: HTMLElement = document.getElementsByTagName( "html")[0]) => {
+const addClasses = (namespaceLessBem: boolean = false, features: Feature[] = [ "webp", "androidbrowser", "touchdevice" ], el: HTMLElement = document.getElementsByTagName( "html")[0]) => {
 
   features.forEach(feature => {
 
@@ -30,6 +30,7 @@ const addClasses = (namespaceLessBem: boolean = true, features: Feature[] = [ "w
         break;
 
       case "webp":
+
         FeatureDetect.supportsWebp(() => { addClass(el, namespaceLessBem, "webp"); }, () => { addClass(el, namespaceLessBem, "no-webp"); });
         break;
 
