@@ -3,3 +3,4 @@ src/*
 tslint.json
 rollup.config.js
 .babelrc
+.rpt2_cache/*
